@@ -1,0 +1,20 @@
+﻿
+@model  Aula01.Models.Cliente
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <p>@Model.Nome</p>
+    <p>@Model.SobreNome</p>
+    <p>@Model.DataCadastro</p>
+</div>
+
+@{ 
+    var cliente = ViewBag.Cliente;
+
+    <p><b>@cliente.Nome</b></p>
+}
